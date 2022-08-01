@@ -1,0 +1,345 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+}
+body{
+    background-color: rgb(92, 92, 205);
+    color: #fff;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 0 4% 0;
+}
+.navbar{
+    z-index: 2;
+    position: fixed;
+    top:0%;
+    width: 100%;
+}
+.bgcolor.scrolled{
+    background-color: rgb(34, 34, 116);
+}
+.navbar-nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------------Home--------------------- */
+
+
+.home .container-fluid{
+    width: 100%;
+    height: 95vh;
+    background: url('cover.jpg') no-repeat;
+    background-size: cover;
+}
+.home .container-fluid{
+    z-index: 1;
+    font-size: 2rem; color: #fff;
+    width: 50%;
+    line-height: 8vh;
+    padding-left: 2rem;
+}
+
+/* .home{
+    display: flex;
+    align-items: center;
+    max-height: 100vh;
+    background-color: blueviolet;
+} */
+
+
+
+/* --------------------------ABOUT ME------------------------- */
+.abt .container{
+    width: 100vw;
+    /* height: 100vh; */
+    border-radius: 10px;
+}
+.abt h1{
+    text-align: center;
+} 
+
+/* PERSONAL INFO */
+
+.persInfo{
+    height: 74vh; width:50%;
+    float: left;
+    border-radius: 10px;
+}
+.persInfoHeading{
+    margin: 2vw 0 1vw 0vw;
+    justify-content: center;
+}
+
+/* MY SKILLS */
+.mySkills{
+    height:74vh; width:50%;
+    float: right;
+    border-radius: 10px;
+}
+.mySkillsHeading{
+    margin: 2vw 0 1vw 0vw;
+    justify-content: center;
+}
+
+.progressBar{
+    width: 75%;
+    margin-left: 12.5%;
+    color: #fff;
+}
+/* -------------ABOUT SECTION ENDED */
+
+
+/* ---------Service------------- */
+.service .container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: #666 2px solid; */
+    border-radius: 10px;
+}
+
+.card-deck .col-12 .card{
+    width: 60vw;
+    background-color: rgb(92, 92, 205);
+}
+.service .card-title{
+    font-size:2.5vw;
+}
+.service .card-text{
+    height:10vh;
+    font-size: 1.8vw;
+}
+
+.service .container .row{
+    text-align: center;
+}
+
+/* -------Education and Experience */
+
+.eduExp .container{
+    width: 100%;
+    border-radius: 10px;
+}
+.eduExp .container .row .col h1{
+    font-size: 6vh;
+}
+
+.myEduHead, .myExpHead{
+    font-size:2.5vw;
+}
+.eduExp .rowHead{
+    text-align: center;
+}
+.degree{
+    font-size: 3vh;
+}
+
+.boxEdu{
+    width:40vw;
+    height: 78vh;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.boxExp{
+    width:40vw;
+    height: 78vh;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.box{
+    height: 21vh;
+    margin-left:1vw;
+    border-left: 2px rgb(34, 34, 116) solid;
+    padding-left: 1vw;
+}
+
+.year{
+    position: relative;
+}
+
+.boxEdu .box .year .fa-calendar::before{
+    content: '';
+    position: absolute;
+    /* top:0rem; left: -4.55rem; */
+    top:0rem; left: -1.45rem;
+    height:1rem;
+    width:1rem;
+    border-radius: 50%;
+    background-color: rgb(34, 34, 116);
+}
+.boxExp .box .year .fa-calendar::before{
+    content: '';
+    position: absolute;
+    top:0rem; left: -1.45rem;
+    height:1rem;
+    width:1rem;
+    border-radius: 50%;
+    background-color: rgb(34, 34, 116);
+}
+
+/* Contact Me */
+.contact .container{
+    border-radius: 10px;
+}
+.contact .container .rowHead{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+.contact .container .rowBody .col-sm{
+    height: 90vh;
+}
+
+.colForm{
+    margin-right: 5px;
+}
+.colPic{
+    margin-left: 5px;
+    
+}
+.rowBody{
+    border-radius: 15px 15px 15px 15px;
+}
+.rowBody .colPic img{
+    border-radius: 15px 15px 15px 15px;
+}
+.created{
+    margin: 10% 0 0 2%;
+}
+
+
+
+
+@media only screen and (max-width:1000px){
+
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .boxEdu .box .year .fa-calendar::before{
+        top:0rem; left: -1.2rem;
+    }
+    .boxExp .box .year .fa-calendar::before{
+        top:0rem; left: -1.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------ MAX WIDTH 992 ------------------ */
+
+@media only screen and (max-width:992px){
+    .abtMeHead h2{
+        font-size: 2.5vh;
+    }
+    .service .card-title{
+        font-size:3vw;
+    } 
+
+    .eduExp .container .row .col h1{
+        font-size: 4vh;
+    }
+    .myEduHead, .myExpHead{
+        font-size:3vh;
+    }
+    .box{
+        padding-left: 8vw;
+    }
+    .boxEdu .box .year .fa-calendar::before{
+        top:0rem; left: -4.5rem;
+    }
+    .boxExp .box .year .fa-calendar::before{
+        top:0rem; left: -4.5rem;
+    }
+    .degree{
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .abtMeHead h2{
+        font-size: 3vh;
+    }
+    .service .card-title{
+        font-size:4vw;
+    }
+    .service .card-text{
+        height:15vh;
+        font-size: 3.5vw;
+    }
+     
+    .boxEdu .box .year .fa-calendar::before{
+        top:0rem; left: -3.5rem;
+    }
+    .boxExp .box .year .fa-calendar::before{
+        top:0rem; left: -3.5rem;
+    }
+
+}
+@media only screen and (max-width:525px){
+    .home{
+        height: 50vh;
+    }
+    .home .container-fluid{
+        height: 50vh;
+
+    }
+    .abt{
+        margin-top: -45vh;
+    }
+    .abt h1{
+        font-size: 9vw;
+    }
+    .persInfo{
+        height: 95vh;
+    }
+    .persInfo{
+        height: max-content;
+        padding-bottom: 5vw;
+    }
+    .mySkills{
+        height: max-content;
+        padding-bottom: 5vw;
+    }
+    .service .card-title{
+        font-size:7vw;
+    } 
+    .service .card-text{
+        height:12vh;
+        font-size: 4.5vw;
+    }
+    .boxExp{
+        height: max-content;
+        padding-bottom: 5vw;
+    }
+    .box{
+        border-left: none;
+    }
+    .box .year{
+        font-size: 4.5vw;
+    }
+    .box span{
+        font-size: 5vw;
+    }
+    .boxEdu .box .year .fa-calendar::before{
+        display: none;
+    }
+    .boxExp .box .year .fa-calendar::before{
+        display: none;
+    }
+}
+
+

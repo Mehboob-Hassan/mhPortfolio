@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark  navbar-expand-lg bgcolor">
+            <a href="" class="navbar-brand">
+                <img src="mhLogo.png" alt="" width='70px' height="70px">
+            </a>
+            <button class="navbar-toggler text-primary" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto text-white">
+                    <li class="nav-item px-4 py-2"><a href="#main">Home</a></li>
+                    <li class="nav-item px-4 py-2"><a href="#abt">About</a></li>
+                    <li class="nav-item px-4 py-2"><a href="#service">Service</a></li>
+                    <li class="nav-item px-4 py-2"><a href="#eduExp">Education</a></li>
+                    <li class="nav-item px-4 py-2"><a href="#">Portfolio</a></li>
+                    <li class="nav-item btn btn-outline-primary" id="navBtnCntct"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="container-fluid w-100 bg-danger d-flex align-items-center" >
+            <h2 class="fw-bolder">Hi,<br>I'm M-H Gajju.<br>I design and build Websites.</h2>
+        </div>
+    </section>
+
+    <!-- ------- ABOUT ME -------- -->
+
+    <section class="abt d-flex justify-content-center align-items-center ">
+        <div class="container py-4 px-5 d-flex flex-column shadow align-items-center">
+            <div class="row">
+                <div class="col">
+                    <h1 >ABOUT ME</h1>
+                </div>
+            </div>
+            <div class="row mt-3 d-flex w-100">
+                <div class="col-lg col-12 shadow persInfo">
+                    <h3 class="row persInfoHeading">Personal Info</h3>
+                    <div class="row">
+                        <div class="col ml-5 ml-sm-4 persInfoLeft">
+                            <h5 class="my-4"><span class="text-dark ">Full Name:<br></span> Mehboob Hassan</h5>
+                            <h5 class="my-4"><span class="text-dark ">Age:<br></span> 21 Years</h5>
+                            <h5 class="my-4"><span class="text-dark ">Email:<br></span> mhgajju@gmail.com</h5>
+                            <h5 class="my-4"><span class="text-dark ">Phone:<br></span> 03450356304</h5>
+                        </div>
+                        <div class="col ml-sm-1 ml-5 persInfoRight">
+                            <h5 class="my-4"><span class="text-dark ">Experience:<br></span> 1 year</h5>
+                            <h5 class="my-4"><span class="text-dark ">Address:<br></span> Hyderabad Sindh</h5>
+                            <h5 class="my-4"><span class="text-dark ">Language:<br></span> Sindhi, Urdu, English</h5>
+                            <h5 class="my-4"><span class="text-dark ">Freelance:<br></span> Avalaible</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-12 mt-4 mt-lg-0 ml-lg-2  shadow mySkills">
+                    <h3 class="row mySkillsHeading">My Skills</h3>
+                    <div class="progressBar">
+                        <span>HTML</span>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <span>CSS</span>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                        <span>Bootstrap</span>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                        <span>Javascript</span>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    
+
+ 
+    <!------------------- SERVICE ----------------->
+    <section class="service" id="service">    
+        <div class="container shadow d-flex-column justify-content-center  px-4 py-4 mt-5">
+            <div class="row myServHead w-100 d-block ">
+                <div > 
+                    <h1>MY SERVICES</h1>
+                </div>
+            </div>
+            <div class="row mt-2 card-deck" id="servRow1">
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <div class="card shadow text-center">
+                        <div class="card-body">
+                            <div class="servCardTitle"><h3 class="card-title">Web Design</h3></div>
+                            <p class="card-text">I provide pretty, responsive, user friendly, attractive and market-trending web pages.</p>
+                            <button class="btn btn-primary" style="border-radius: 50px;">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <div class="card shadow text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Web Development</h3>
+                            <p class="card-text">I create static and dynamic web systems for any organization, small or vast businesses.</p>
+                            <button class="btn btn-primary" style="border-radius: 50px;">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 card-deck" id="servRow2">
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <div class="card shadow text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Web UI Design</h3>
+                            <p class="card-text">I design attractive UI design for any kind of web systems.</p>
+                            <button class="btn btn-primary" style="border-radius: 50px;">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <div class="card shadow text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Blockchain</h3>
+                            <p class="card-text">I provide blockchain system, smart contracts and other secure systems for IT systems.</p>
+                            <button class="btn btn-primary" style="border-radius: 50px;">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------- SERVICE ENDED ----------------->
+
+
+    <!-- ---------------- Education and Experience ------ -->
+
+    <section class="eduExp d-flex justify-content-center align-items-center">
+        <div class="container shadow d-flex flex-column px-5 py-5 align-items-center">
+            <div class="row">
+                <div class="col">
+                    <h1>EDUCATION AND EXPERIENCE</h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg col-12 shadow mr-lg-2 boxEdu">
+                    <h2 class="ml-3 mt-3 h2 myEduHead" >MY EDUCATION</h2>
+                    <div class="box column">
+                        <div class="year text-dark">
+                            <i class="fa fa-calendar"></i>
+                            <b> 2019 - to date </b>
+                        </div>
+                        <h3 class="degree"> BS Degree : University of Sindh</h3>
+                        <span>Information Technology</span><br>
+                        <span>CGP : 3.46/4</span>
+                    </div>
+                    <div class="box column">
+                        <div class="year text-dark">
+                            <i class="fa fa-calendar"></i>
+                            <b> 2016 - 2018 </b>
+                        </div>
+                        <h3 class="degree">Intermediate : SPSC Umerkot</h3>
+                        <span>Marks: 811/1100</span><br>
+                        <span>Grade: A</span><br>
+                        <span>Percentage: 76</span>
+                    </div>
+                    <div class="box column">
+                        <div class="year text-dark">
+                            <i class="fa fa-calendar"></i>
+                            <b> 2014 - 2016 </b>
+                        </div>
+                        <h3 class="degree"> Matriculation : Govt HS Dhilyar</h3>
+                        <span>Marks: 686/800</span><br>
+                        <span>Grade: A1</span><br>
+                        <span>Percentage:81</span>
+                    </div>
+                </div>
+                <div class="col-lg col-12 shadow ml-lg-2 mt-4 mt-lg-0 boxExp">
+                    <h2 class="ml-3 mt-3 myExpHead">MY EXPERIENCE</h2>
+                    <div class="box column">
+                        <div class="year text-dark">
+                            <i class="fa fa-calendar"></i>
+                            <b> 2019 - to date </b>
+                        </div>
+                        <h3 class="degree">Freelancing</h3>
+                        <span>Orders Completed: 10</span><br>
+                        <span>Time Delivery: 95%</span><br>
+                        <span>Client Satification: 98%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT ME -->
+
+
+    <div class="section contact" id="contact">
+        <div class="container shadow-lg py-4 pl-5 mt-5">
+            <div class="row rowHead">
+                <div class="col-sm ">
+                   <h1>CONTACT ME</h1>
+                </div>
+            </div>
+            <div class="row rowBody shadow-lg">
+                <div class="col-md col-12-sm colForm">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="number" class="form-control" name="phone" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <input type="text" class="form-control" name="message" id="message" placeholder="message" style="height:10vh; text-align: top;">
+                        </div>
+                        <button class="btn btn-capsule btn-primary" >Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md colPic">
+                    <!-- <img src="https://source.unsplash.com/random" style="width: 100%; height:100%" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="created">
+        <h4 class="">Created By <a href="" style="text-decoration: none; color: #fff;"> M H Gajju </a> | All Rights Reserved</h4>
+    </div>
+
+
+
+    <!-- Optional Javascript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+     <script>
+        $(window).scroll(function(){
+            $('nav').toggleClass('scrolled', $(this).scrollTop()>50)
+        })
+     </script>
+    </body>
+</html>
+
+
+
+
+
+<!-- 
+<img src="https://source.unsplash.com/random" style="width: 300px; height:300px" alt="">
+<img src="https://source.unsplash.com/user/erondu/1600x900" style="width: 300px; height:300px">
+<img src="(https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" style="width: 300px; height:300px">
+ -->
+
+ <!-- <section class="home"  id="home">
+    <div class="h-100 w-100 ml-5 content">
+        <h2 class="fw-bolder">Hi,<br>I'm M-H Gajju.<br>I design and build Websites.</h2>
+    </div>
+        <div class="learnMore">
+            <p>Learn more about what I do</p>
+            <span class="carousel-control-prev-icon fw-light"></span>
+        </div>
+</section> -->
