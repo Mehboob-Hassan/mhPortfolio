@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,31 @@
     <title>Document</title>
 
     <!-- Bootstrap Link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
-
+    <script src="./images/https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-dark  navbar-expand-lg bgcolor">
             <a href="" class="navbar-brand">
-                <img src="mhLogo.png" alt="" width='70px' height="70px">
+                <img src="./images/mhLogo.png" alt="" width='70px' height="70px">
             </a>
-            <button class="navbar-toggler text-primary" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler text-primary" type="button" data-toggle="collapse" data-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ml-auto text-white">
-                    <li class="nav-item px-4 py-2"><a href="#main">Home</a></li>
-                    <li class="nav-item px-4 py-2"><a href="#abt">About</a></li>
+                    <li class="nav-item px-4 py-2"><a href="#home">Home</a></li>
+                    <li class="nav-item px-4 py-2"><a href="#about">About</a></li>
+                    <li class="nav-item px-4 py-2"><a href="#skills">Skills</a></li>
                     <li class="nav-item px-4 py-2"><a href="#service">Service</a></li>
                     <li class="nav-item px-4 py-2"><a href="#eduExp">Education</a></li>
-                    <li class="nav-item px-4 py-2"><a href="#">Portfolio</a></li>
+                    <li class="nav-item px-4 py-2"><a href="#myWork">Portfolio</a></li>
                     <li class="nav-item btn btn-outline-primary" id="navBtnCntct"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -36,18 +41,21 @@
 
 
     <section class="home" id="home">
-        <div class="container-fluid w-100 bg-danger d-flex align-items-center" >
-            <h2 class="fw-bolder">Hi,<br>I'm M-H Gajju.<br>I design and build Websites.</h2>
+        <div class="container-fluid w-100 bg-danger d-flex align-items-center ">
+            <div class="home-description">
+                <h2 class="fw-bolder">Hi, I'm <br ><span style="font-size: 4vw;">Mehboob Hassan</span>.<br>I am a MERN Stack & Blockchain Devoper.</h2>
+                <p>I have experience building modern web applications and decentralized applications (dApps) using the MERN Stack and Blockchain technologies.</p>
+            </div>
         </div>
     </section>
 
     <!-- ------- ABOUT ME -------- -->
 
-    <section class="abt d-flex justify-content-center align-items-center ">
+    <section class="abt d-flex justify-content-center align-items-center" id="about">
         <div class="container py-4 px-5 d-flex flex-column shadow align-items-center">
             <div class="row">
                 <div class="col">
-                    <h1 >ABOUT ME</h1>
+                    <h1>ABOUT ME</h1>
                 </div>
             </div>
             <div class="row mt-3 d-flex w-100">
@@ -55,98 +63,126 @@
                     <h3 class="row persInfoHeading">Personal Info</h3>
                     <div class="row">
                         <div class="col ml-5 ml-sm-4 persInfoLeft">
-                            <h5 class="my-4"><span class="text-dark ">Full Name:<br></span> Mehboob Hassan</h5>
-                            <h5 class="my-4"><span class="text-dark ">Age:<br></span> 21 Years</h5>
-                            <h5 class="my-4"><span class="text-dark ">Email:<br></span> mhgajju@gmail.com</h5>
-                            <h5 class="my-4"><span class="text-dark ">Phone:<br></span> 03450356304</h5>
+                            <h5 class="my-4"><span class="fogy-text ">Full Name:<br></span> Mehboob Hassan</h5>
+                            <h5 class="my-4"><span class="fogy-text ">Age:<br></span> 21 Years</h5>
+                            <h5 class="my-4"><span class="fogy-text ">Email:<br></span> mhgajju@gmail.com</h5>
+                            <h5 class="my-4"><span class="fogy-text ">Phone:<br></span> 03450356304</h5>
                         </div>
                         <div class="col ml-sm-1 ml-5 persInfoRight">
-                            <h5 class="my-4"><span class="text-dark ">Experience:<br></span> 1 year</h5>
-                            <h5 class="my-4"><span class="text-dark ">Address:<br></span> Hyderabad Sindh</h5>
-                            <h5 class="my-4"><span class="text-dark ">Language:<br></span> Sindhi, Urdu, English</h5>
-                            <h5 class="my-4"><span class="text-dark ">Freelance:<br></span> Avalaible</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-12 mt-4 mt-lg-0 ml-lg-2  shadow mySkills">
-                    <h3 class="row mySkillsHeading">My Skills</h3>
-                    <div class="progressBar">
-                        <span>HTML</span>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-                        </div>
-                        <span>CSS</span>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                        </div>
-                        <span>Bootstrap</span>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-                        </div>
-                        <span>Javascript</span>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                        <span>NodeJS & ExpressJS</span>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                        </div>
-                        <span>MongoDB</span>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="prgressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                            <h5 class="my-4"><span class="fogy-text ">Experience:<br></span> 1 year</h5>
+                            <h5 class="my-4"><span class="fogy-text ">Address:<br></span> Hyderabad Sindh</h5>
+                            <h5 class="my-4"><span class="fogy-text ">Language:<br></span> Sindhi, Urdu, English</h5>
+                            <h5 class="my-4"><span class="fogy-text ">Freelancing:<br></span> Avalaible</h5>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
 
-    
 
- 
+    <!-- ----------MY SKILLS--------------- -->
+    <section class="mySkills-section container" id="skills">
+        <div class=" col-lg col-12 mt-4 mt-lg-0 ml-lg-2 shadow mySkills">
+            <h3 class="row mySkillsHeading">My Skills</h3>
+            <div class="boxSkills">
+                <div class="row">
+                    <div class="shadow">
+                        <img src="./images/html-logo.png" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/css.svg" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/bootstrap.avif" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/javascript.png" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/node.png" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/express.webp" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/mongo.png" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/react.png" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/ethereum.png" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/solidity.png" alt="">
+                    </div>
+                    <div class="shadow">
+                        <img src="./images/ethers.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!------------------- SERVICE ----------------->
-    <section class="service" id="service">    
-        <div class="container shadow d-flex-column justify-content-center  px-4 py-4 mt-5">
-            <div class="row myServHead w-100 d-block ">
-                <div > 
+    <section class="myServices d-flex justify-content-center align-items-center" id="service">
+        <div class="container shadow d-flex flex-column px-5 py-5 align-items-center">
+            <div class="row">
+                <div class="col">
                     <h1>MY SERVICES</h1>
                 </div>
             </div>
-            <div class="row mt-2 card-deck" id="servRow1">
-                <div class="col-12 col-md-6 mt-3 mt-md-0">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <div class="servCardTitle"><h3 class="card-title">Web Design</h3></div>
-                            <p class="card-text">I provide pretty attractive, responsive, user friendly and market-trending web pages.</p>
-                            <button class="btn btn-primary" style="border-radius: 50px;">Read more</button>
+            <div class="row mt-4">
+                <div class="col-lg col-12 shadow mr-lg-2 boxServices">
+                    <h2 class="ml-3 mt-3 h2 WebDevlopment">Web Development</h2>
+                    <div class="inner-boxServices">
+                        <div class="row1">
+                            <div class="shadow ml-1 mt-3 row serviceCard">
+                                <img src="./images/mern-stack.webp" alt="">
+                                <h5 class="p-3">Front-end development using React.js, HTML, CSS, and JavaScript</h5>
+                            </div>
+                            <div class="shadow ml-1 mt-3 row serviceCard">
+                                <img src="./images/backend.webp" alt="">
+                                <h5 class="p-3">Back-end development using MERN stack technologies</h5>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="shadow ml-1 mt-3 row serviceCard">
+                                <img src="./images/responsive.jpg" alt="">
+                                <h5 class="p-3">Responsive web design and cross-browser compatibility testing</h5>
+                            </div>
+                            <div class="shadow ml-1 mt-3 row serviceCard">
+                                <img src="./images/api.jpg" alt="">
+                                <h5 class="p-3">API development and integration with third-party services</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mt-3 mt-md-0">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Web Development</h3>
-                            <p class="card-text">I create static and dynamic Websites for any organization, small or vast businesses.</p>
-                            <button class="btn btn-primary" style="border-radius: 50px;">Read more</button>
+                <div class="col-lg col-12 shadow ml-lg-2 mt-4 mt-lg-0 boxServices">
+                    <h2 class="ml-3 mt-3 h2 WebDevlopment">Blockchain Development</h2>
+                    <div class="inner-boxServices">
+                        <div class="row1">
+                            <div class="shadow ml-1 mt-3 row serviceCard">
+                                <img src="./images/smartContract.png" alt="">
+                                <h5 class="p-3">Smart contract development using Solidity</h5>
+                            </div>
+                            <div class="shadow ml-1 mt-3 row serviceCard">
+                                <img src="./images/dapps.webp" alt="">
+                                <h5 class="p-3">Development of DApps on blockchain platforms such as Ethereum, BSC etc.
+                                </h5>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-3 card-deck" id="servRow2">
-                <div class="col-12 col-md-6 mt-3 mt-md-0">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Web UI Design</h3>
-                            <p class="card-text">I design attractive UI design for any kind of websites.</p>
-                            <button class="btn btn-primary" style="border-radius: 50px;">Read more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 mt-3 mt-md-0">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h3 class="card-title">Backend</h3>
-                            <p class="card-text">I code NodeJS based Backend systems for any type of website.</p>
-                            <button class="btn btn-primary" style="border-radius: 50px;">Read more</button>
+                        <div class="row2">
+                            <div class="shadow ml-1 mt-3 row serviceCard">
+                                <img src="./images/payment.png" alt="">
+                                <h5 class="p-3">Integration with blockchain wallets and payment gateways</h5>
+                            </div>
+                            <div class="shadow ml-1 mt-3 row serviceCard">
+                                <img src="./images/tokens.jpg" alt="">
+                                <h5 class="p-3">Token creation and implementation of tokenomics strategies</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,9 +192,165 @@
     <!------------------- SERVICE ENDED ----------------->
 
 
-    <!-- ---------------- Education and Experience ------ -->
 
-    <section class="eduExp d-flex justify-content-center align-items-center">
+    <!-- --------------MY WORK--------------- -->
+    <section class="myWork d-flex justify-content-center align-items-center" id="myWork">
+        <div class="container MyWorkCards shadow d-flex flex-column px-5 py-5 align-items-center">
+            <div class="row">
+                <div class="col">
+                    <h1>MY WORK</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg col-12 shadow ml-lg-2 mt-4 mt-lg-0 boxMyWork">
+                    <div class="inner-boxMyWork">
+                        <h2 class="ml-3 mt-3 h2 WebDevlopment">Web Development</h2>
+                        <div class="innerBox-myWork">
+                            <div class="row1">
+                                <div class="flip-card m-2">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./images/WeRx.png" alt="Avatar">
+                                            <p style="font-weight: bold;">WeRx Startup Introductory Website</p>
+                                            <p>A visually striking website featuring beautiful gradients and smooth transitions.
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <button>Code</button>
+                                            <button><a href="https://mehboob-hassan.github.io/WeRx-official/" style="color: black; text-decoration: none;">Demo</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card m-2">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./images/nic.png" alt="Avatar">
+                                            <p style="font-weight: bold;">One Page Website for Incubation Center</p>
+                                            <p>A clean and professional site with eye-catching gradients and dynamic transitions.
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <button>Code</button>
+                                            <button>Demo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div class="flip-card m-2">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./images/nic.png" alt="Avatar">
+                                            <p style="font-weight: bold;">One Page Website for Incubation Center</p>
+                                            <p>A clean and professional site with eye-catching gradients and dynamic transitions.
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <button><a href=""></a>Code</button>
+                                            <button><a href="https://mehboob-hassan.github.io/nic.github.io/" style="color: black; text-decoration: none; width: 100%;">Demo</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card m-2">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./images/backend.webp" alt="Avatar">
+                                            <h3>Whitelist DApp for NFT</h3>
+                                            <p>This is DApp where users can get Whitelisted for NFT minting or getting coins
+                                                from ICOs
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <button>Code</button>
+                                            <button>Demo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-12 shadow ml-lg-2 mt-4 mt-lg-0 boxMyWork">
+                    <div class="inner-boxMyWork">
+                        <h2 class="ml-3 mt-3 h2 MyWorkblockChain">Solidity/Blockchain DApps</h2>
+                        <div class="innerBox-myWork">
+                            <div class="row1">
+                                <div class="flip-card m-2">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./images/backend.webp" alt="Avatar">
+                                            <h3>Whitelist DApp for NFT</h3>
+                                            <p>This is DApp where users can get Whitelisted for NFT minting or getting coins
+                                                from ICOs
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <button>Code</button>
+                                            <button>Demo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card m-2">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./images/backend.webp" alt="Avatar">
+                                            <h3>Whitelist DApp for NFT</h3>
+                                            <p>This is DApp where users can get Whitelisted for NFT minting or getting coins
+                                                from ICOs
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <button>Code</button>
+                                            <button>Demo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div class="flip-card m-2">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./images/backend.webp" alt="Avatar">
+                                            <h3>Whitelist DApp for NFT</h3>
+                                            <p>This is DApp where users can get Whitelisted for NFT minting or getting coins
+                                                from ICOs
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <button>Code</button>
+                                            <button>Demo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card m-2">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./images/backend.webp" alt="Avatar">
+                                            <h3>Whitelist DApp for NFT</h3>
+                                            <p>This is DApp where users can get Whitelisted for NFT minting or getting coins
+                                                from ICOs
+                                            </p>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <button>Code</button>
+                                            <button>Demo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- ---------------- Education and Experience ------ -->
+    <section class="eduExp d-flex justify-content-center align-items-center" id="eduExp">
         <div class="container shadow d-flex flex-column px-5 py-5 align-items-center">
             <div class="row">
                 <div class="col">
@@ -167,48 +359,54 @@
             </div>
             <div class="row mt-4">
                 <div class="col-lg col-12 shadow mr-lg-2 boxEdu">
-                    <h2 class="ml-3 mt-3 h2 myEduHead" >MY EDUCATION</h2>
+                    <h2 class="ml-3 mt-3 h2 myEduHead">EDUCATION</h2>
                     <div class="box column">
-                        <div class="year text-dark">
+                        <div class="year fogy-text">
                             <i class="fa fa-calendar"></i>
-                            <b> 2019 - to date </b>
+                            <b> 2019 - to 2022 </b>
                         </div>
                         <h3 class="degree"> BS Degree : University of Sindh</h3>
                         <span>Information Technology</span><br>
                         <span>CGP : 3.46/4</span>
                     </div>
                     <div class="box column">
-                        <div class="year text-dark">
+                        <div class="year fogy-text">
                             <i class="fa fa-calendar"></i>
                             <b> 2016 - 2018 </b>
                         </div>
                         <h3 class="degree">Intermediate : SPSC Umerkot</h3>
-                        <span>Marks: 811/1100</span><br>
                         <span>Grade: A</span><br>
                         <span>Percentage: 76</span>
                     </div>
                     <div class="box column">
-                        <div class="year text-dark">
+                        <div class="year fogy-text">
                             <i class="fa fa-calendar"></i>
                             <b> 2014 - 2016 </b>
                         </div>
                         <h3 class="degree"> Matriculation : Govt HS Dhilyar</h3>
-                        <span>Marks: 686/800</span><br>
                         <span>Grade: A1</span><br>
                         <span>Percentage:81</span>
                     </div>
                 </div>
                 <div class="col-lg col-12 shadow ml-lg-2 mt-4 mt-lg-0 boxExp">
-                    <h2 class="ml-3 mt-3 myExpHead">MY EXPERIENCE</h2>
+                    <h2 class="ml-3 mt-3 myExpHead">EXPERIENCE</h2>
                     <div class="box column">
-                        <div class="year text-dark">
+                        <div class="year fogy-text">
                             <i class="fa fa-calendar"></i>
-                            <b> 2019 - to date </b>
+                            <b> 25th Nov 2022 - 25th Feb 2023 </b>
                         </div>
-                        <h3 class="degree">Freelancing</h3>
-                        <span>Orders Completed: 10</span><br>
-                        <span>Time Delivery: 95%</span><br>
-                        <span>Client Satification: 98%</span>
+                        <h3 class="degree">Web Development</h3>
+                        <span>Internship (Remotely)</span><br> 
+                        <button class="certificate-button" style="width: 10vw; margin-top: 1vw;"><a href="https://drive.google.com/file/d/1vDJU7OZbPHtKT-j2nXQDeg1dU4iu3UFE/view?usp=sharing">Certificate</a></button>
+                    </div>
+                    <div class="box column">
+                        <div class="year fogy-text">
+                            <i class="fa fa-calendar"></i>
+                            <b> 25th Jan 2022 - to date </b>
+                        </div>
+                        <h3 class="degree">Blockchain Development</h3>
+                        <span>Internship</span><br>
+                        <button class="certificate-button" style="width: 10vw; margin-top: 1vw;"><a>Continue</a></button>
                     </div>
                 </div>
             </div>
@@ -222,19 +420,20 @@
         <div class="container shadow-lg py-4 pl-5 mt-5">
             <div class="row rowHead">
                 <div class="col-sm ">
-                   <h1>CONTACT ME</h1>
+                    <h1>CONTACT ME</h1>
                 </div>
             </div>
             <div class="row rowBody shadow-lg">
                 <div class="col-md col-12-sm colForm">
-                    <form action="">
+                    <form action="mailto:mhgajju@gmail.com" method="POST" enctype="multipart/form-data">
                         <div class="form-group my-2">
                             <label for="name">Name</label>
                             <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Email Address">
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>
@@ -246,54 +445,44 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <input type="text" class="form-control" name="message" id="message" placeholder="message" style="height:10vh; text-align: top;">
+                            <input type="text" class="form-control" name="message" id="message" placeholder="message"
+                                style="height:10vh; text-align: top;">
                         </div>
-                        <button class="btn btn-capsule btn-primary my-3" >Send Message</button>
+                        <button type="submit" class="btn btn-capsule btn-primary my-3">Send Message</button>
                     </form>
                 </div>
                 <div class="col-md colPic">
-                    <!-- <img src="https://source.unsplash.com/random" style="width: 100%; height:100%" alt=""> -->
+                    <img src="./images/./my dp.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 
     <div class="created">
-        <h5 class="">Created By <a href="" style="text-decoration: none; color: #fff;"> M H Gajju </a> | All Rights Reserved</h5>
+        <footer className={styles.footer}>
+            Made with &#10084;&#65039; by Hassan
+        </footer>
     </div>
 
 
 
     <!-- Optional Javascript -->
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   
-     <script>
-        $(window).scroll(function(){
-            $('nav').toggleClass('scrolled', $(this).scrollTop()>50)
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./images/https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="./images/https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./images/https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50)
         })
-     </script>
-    </body>
+    </script>
+</body>
+
 </html>
-
-
-
-
-
-<!-- 
-<img src="https://source.unsplash.com/random" style="width: 300px; height:300px" alt="">
-<img src="https://source.unsplash.com/user/erondu/1600x900" style="width: 300px; height:300px">
-<img src="(https://source.unsplash.com/random/1920x1080/?wallpaper,landscape" style="width: 300px; height:300px">
- -->
-
- <!-- <section class="home"  id="home">
-    <div class="h-100 w-100 ml-5 content">
-        <h2 class="fw-bolder">Hi,<br>I'm M-H Gajju.<br>I design and build Websites.</h2>
-    </div>
-        <div class="learnMore">
-            <p>Learn more about what I do</p>
-            <span class="carousel-control-prev-icon fw-light"></span>
-        </div>
-</section> -->

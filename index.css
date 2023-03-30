@@ -1,27 +1,57 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     max-width: 100%;
 }
-body{
-    background-color: rgb(92, 92, 205);
-    color: #fff;
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,200');
+
+body {
+    font-family: Helvetica, san-serif;
+    background: -webkit-linear-gradient(90deg, #0c2434 10%, #25415b 90%);
+    /* Chrome 10+, Saf5.1+ */
+    background: -moz-linear-gradient(90deg, #0c2434 10%, #25415b 90%);
+    /* FF3.6+ */
+    background: -ms-linear-gradient(90deg, #0c2434 10%, #25415b 90% );
+    /* IE10 */
+    background: -o-linear-gradient(90deg, #0c2434 10%, #25415b 90%, );
+    /* Opera 11.10+ */
+    background: linear-gradient(90deg, #0c2434 10%, #25415b 90%);
+    color: white;
 }
-section{
+
+.fogy-text{
+    color: #8e99a5;
+}
+section {
     width: 100%;
     min-height: 100vh;
     padding: 0 0 4% 0;
 }
-.navbar{
+
+.navbar {
     z-index: 2;
     position: fixed;
-    top:0%;
+    top: 0%;
     width: 100%;
 }
-.bgcolor.scrolled{
-    background-color: rgb(34, 34, 116);
+
+.bgcolor.scrolled {
+    /* background-color: rgb(34, 34, 116); */
+    font-family: Helvetica, san-serif;
+    background: -webkit-linear-gradient(90deg, #25415b 10%, #0c2434 90%);
+    /* Chrome 10+, Saf5.1+ */
+    background: -moz-linear-gradient(90deg, #25415b 10%, #0c2434 90%);
+    /* FF3.6+ */
+    background: -ms-linear-gradient(90deg, #25415b 10%, #0c2434 90% );
+    /* IE10 */
+    background: -o-linear-gradient(90deg, #25415b 10%, #0c2434 90%, );
+    /* Opera 11.10+ */
+    background: linear-gradient(90deg, #25415b 10%, #0c2434 90%);
 }
-.navbar-nav li a{
+
+.navbar-nav li a {
     color: white;
     text-decoration: none;
 }
@@ -29,18 +59,31 @@ section{
 /* -----------------Home--------------------- */
 
 
-.home .container-fluid{
+.home .container-fluid {
     width: 100%;
     height: 95vh;
-    background: url('cover.jpg') no-repeat;
+    background: url('./images/cover.jpg') no-repeat;
     background-size: cover;
 }
-.home .container-fluid{
+
+.home .container-fluid {
     z-index: 1;
-    font-size: 2rem; color: #fff;
+    font-size: 2rem;
+    color: #fff;
     width: 50%;
     line-height: 8vh;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
+}
+.home-description{
+    display: flex;
+    flex-direction: column;
+}
+.home-description p{
+    width: 50vw;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    line-height: 4.5vh;
+    font-family: Monospace;
 }
 
 /* .home{
@@ -53,48 +96,81 @@ section{
 
 
 /* --------------------------ABOUT ME------------------------- */
-.abt .container{
+.abt .container {
     width: 100vw;
     /* height: 100vh; */
     border-radius: 10px;
 }
-.abt h1{
+
+.abt h1 {
     text-align: center;
-} 
+}
 
 /* PERSONAL INFO */
 
-.persInfo{
-    height: 74vh; width:50%;
+.persInfo {
+    height: 74vh;
+    width: 50%;
     float: left;
     border-radius: 10px;
 }
-.persInfoHeading{
+
+.persInfoHeading {
     margin: 2vw 0 1vw 0vw;
     justify-content: center;
 }
 
 /* MY SKILLS */
-.mySkills{
-    height:74vh; width:50%;
+.mySkills {
+    padding: 20px;
     float: right;
+    padding-left: 3vw;
     border-radius: 10px;
 }
-.mySkillsHeading{
+
+.boxSkills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxSkills .row div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14vw;
+    height: 14vw;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.boxSkills .row div img {
+    width: 11vw;
+    height: 11vw;
+    border-radius: 20%;
+}
+.boxSkills .row div img:hover{
+    width: 12vw;
+    height: 12vw;
+}
+.mySkillsHeading {
+    font-weight: bolder;
+    font-size: 4vw;
     margin: 2vw 0 1vw 0vw;
     justify-content: center;
 }
 
-.progressBar{
+.progressBar {
     width: 75%;
     margin-left: 12.5%;
     color: #fff;
 }
+
 /* -------------ABOUT SECTION ENDED */
 
 
 /* ---------Service------------- */
-.service .container{
+.service .container {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -105,241 +181,384 @@ section{
     border-radius: 10px;
 }
 
-.card-deck .col-12 .card{
-    width: 60vw;
-    background-color: rgb(92, 92, 205);
-}
-.service .card-title{
-    font-size:2.5vw;
-}
-.service .card-text{
-    height:10vh;
-    font-size: 1.8vw;
+.boxServices{
+    width: 40vw;
+    min-height: 78vh;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding-bottom: 20px;
 }
 
-.service .container .row{
-    text-align: center;
+.inner-boxServices {
+    display: flex;
+    justify-content: space-around;
 }
+
+.serviceCard,
+.myWorkCard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 15vw;
+    height: 20vw;
+    overflow: hidden;
+    border-radius: 5px 5px 10px 10px;
+}
+
+
+.serviceCard img {
+    width: 20vw;
+    height: 8vw;
+}
+
+
+
+/* MY WORK */
+.innerBox-myWork{
+    display: flex;
+    width: 100%;
+}
+.boxMyWork{
+    width: 50%;
+}
+.flip-card {
+    background-color: transparent;
+    width: 15vw;
+    height: 20vw;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    display: flex;
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    width: 15vw;
+    height: 20vw;
+    border-radius: 5px 5px 10px 10px;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: white;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+    /* background: linear-gradient(90deg, #DD2476 10%, #00aaee 90%); */
+    background-color: #374f69;
+  }
+
+  .flip-card-back button, .certificate-button{
+    cursor:pointer;
+    margin-top: 2vw;
+    color: white;
+    border: 1px solid white;
+    background: none;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .flip-card-back button:hover, .certificate-button:hover{
+    color: white;
+    background: linear-gradient(90deg, #0c2434 10%, #25415b 90%);
+  }
+  .flip-card-back :nth-child(1){
+    margin-top: 7.5vw;
+  }
+
+
+
+
 
 /* -------Education and Experience */
 
-.eduExp .container{
+.eduExp .container {
     width: 100%;
     border-radius: 10px;
 }
-.eduExp .container .row .col h1{
+
+.eduExp .container .row .col h1 {
     font-size: 6vh;
 }
 
-.myEduHead, .myExpHead{
-    font-size:2.5vw;
+.myEduHead,
+.myExpHead {
+    font-size: 2.5vw;
 }
-.eduExp .rowHead{
+
+.eduExp .rowHead {
     text-align: center;
 }
-.degree{
+
+.degree {
     font-size: 3vh;
 }
 
-.boxEdu{
-    width:40vw;
+.boxEdu {
+    width: 40vw;
     height: 78vh;
     border-radius: 10px;
     margin-right: 5px;
 }
-.boxExp{
-    width:40vw;
+
+.boxExp {
+    width: 40vw;
     height: 78vh;
     border-radius: 10px;
     margin-left: 5px;
 }
 
-.box{
+.box {
     height: 21vh;
-    margin-left:1vw;
+    margin-left: 1vw;
     border-left: 2px rgb(34, 34, 116) solid;
     padding-left: 1vw;
 }
-
-.year{
+.box button{
+    margin-bottom: 1vw;
+}
+.box button a{
+    color: white;
+    text-decoration: none;
+}
+.box button a:hover{
+    color: black;
+    text-decoration: none;
+}
+.year {
     position: relative;
 }
 
-.boxEdu .box .year .fa-calendar::before{
+.boxEdu .box .year .fa-calendar::before {
     content: '';
     position: absolute;
     /* top:0rem; left: -4.55rem; */
-    top:0rem; left: -1.45rem;
-    height:1rem;
-    width:1rem;
+    top: 0rem;
+    left: -1.45rem;
+    height: 1rem;
+    width: 1rem;
     border-radius: 50%;
-    background-color: rgb(34, 34, 116);
-}
-.boxExp .box .year .fa-calendar::before{
-    content: '';
-    position: absolute;
-    top:0rem; left: -1.45rem;
-    height:1rem;
-    width:1rem;
-    border-radius: 50%;
-    background-color: rgb(34, 34, 116);
+    background-color: rgb(23, 23, 227);
 }
 
+.boxExp .box .year .fa-calendar::before {
+    content: '';
+    position: absolute;
+    top: 0rem;
+    left: -1.45rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: rgb(23, 23, 227);
+}
+
+
+
 /* Contact Me */
-.contact .container{
+.contact .container {
     border-radius: 10px;
 }
-.contact .container .rowHead{
+
+.contact .container .rowHead {
     text-align: center;
     margin-bottom: 4vh;
 }
-.contact .container .rowBody .col-sm{
+
+.contact .container .rowBody .col-sm {
     height: 90vh;
 }
 
-.colForm{
-    margin-right: 5px;
+.colForm {
+    margin: 2.4vw 5px 0 0;
 }
-.colPic{
+
+.colPic {
     margin-left: 5px;
-    
+
 }
-.rowBody{
+
+.rowBody {
     border-radius: 15px 15px 15px 15px;
 }
-.rowBody .colPic img{
+
+.rowBody .colPic img {
     border-radius: 15px 15px 15px 15px;
-}
-.created{
-    margin: 10% 0 0 2%;
-}
-
-
-
-
-@media only screen and (max-width:1000px){
-
+    width: 100%;
+    height:100%;
 }
 
-@media (min-width:992px) and (max-width:1200px){
-    .boxEdu .box .year .fa-calendar::before{
-        top:0rem; left: -1.2rem;
+.created {
+    text-align: center;
+    margin: 5vw 0vw 3vw 0;
+}
+
+
+
+
+@media only screen and (max-width:1000px) {}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .boxEdu .box .year .fa-calendar::before {
+        top: 0rem;
+        left: -1.2rem;
     }
-    .boxExp .box .year .fa-calendar::before{
-        top:0rem; left: -1.2rem;
+
+    .boxExp .box .year .fa-calendar::before {
+        top: 0rem;
+        left: -1.2rem;
     }
 }
-
-
-
-
-
-
-
 
 
 
 /* ------------ MAX WIDTH 992 ------------------ */
 
-@media only screen and (max-width:992px){
-    .abtMeHead h2{
+@media only screen and (max-width:992px) {
+    .abtMeHead h2 {
         font-size: 2.5vh;
     }
-    .service .card-title{
-        font-size:3vw;
-    } 
 
-    .eduExp .container .row .col h1{
+    .service .card-title {
+        font-size: 3vw;
+    }
+
+    .eduExp .container .row .col h1 {
         font-size: 4vh;
     }
-    .myEduHead, .myExpHead{
-        font-size:3vh;
+
+    .myEduHead,
+    .myExpHead {
+        font-size: 3vh;
     }
-    .box{
+
+    .box {
         padding-left: 8vw;
     }
-    .boxEdu .box .year .fa-calendar::before{
-        top:0rem; left: -4.5rem;
+
+    .boxEdu .box .year .fa-calendar::before {
+        top: 0rem;
+        left: -4.5rem;
     }
-    .boxExp .box .year .fa-calendar::before{
-        top:0rem; left: -4.5rem;
+
+    .boxExp .box .year .fa-calendar::before {
+        top: 0rem;
+        left: -4.5rem;
     }
-    .degree{
+
+    .degree {
         font-size: 3vh;
     }
 }
 
-@media only screen and (max-width:768px){
-    .abtMeHead h2{
+@media only screen and (max-width:768px) {
+    .abtMeHead h2 {
         font-size: 3vh;
     }
-    .service .card-title{
-        font-size:4vw;
+
+    .service .card-title {
+        font-size: 4vw;
     }
-    .service .card-text{
-        height:15vh;
+
+    .service .card-text {
+        height: 15vh;
         font-size: 3.5vw;
     }
-     
-    .boxEdu .box .year .fa-calendar::before{
-        top:0rem; left: -3.5rem;
+
+    .boxEdu .box .year .fa-calendar::before {
+        top: 0rem;
+        left: -3.5rem;
     }
-    .boxExp .box .year .fa-calendar::before{
-        top:0rem; left: -3.5rem;
+
+    .boxExp .box .year .fa-calendar::before {
+        top: 0rem;
+        left: -3.5rem;
     }
 
 }
-@media only screen and (max-width:525px){
-    .home{
+
+@media only screen and (max-width:525px) {
+    .home {
         height: 50vh;
     }
-    .home .container-fluid{
+
+    .home .container-fluid {
         height: 50vh;
 
     }
-    .abt{
+
+    .abt {
         margin-top: -45vh;
     }
-    .abt h1{
+
+    .abt h1 {
         font-size: 9vw;
     }
-    .persInfo{
+
+    .persInfo {
         height: 95vh;
     }
-    .persInfo{
+
+    .persInfo {
         height: max-content;
         padding-bottom: 5vw;
     }
-    .mySkills{
+
+    .mySkills {
         height: max-content;
         padding-bottom: 5vw;
     }
-    .service .card-title{
-        font-size:7vw;
-    } 
-    .service .card-text{
-        height:12vh;
+
+    .service .card-title {
+        font-size: 7vw;
+    }
+
+    .service .card-text {
+        height: 12vh;
         font-size: 4.5vw;
     }
-    .boxExp{
+
+    .boxExp {
         height: max-content;
         padding-bottom: 5vw;
     }
-    .box{
+
+    .box {
         border-left: none;
     }
-    .box .year{
+
+    .box .year {
         font-size: 4.5vw;
     }
-    .box span{
+
+    .box span {
         font-size: 5vw;
     }
-    .boxEdu .box .year .fa-calendar::before{
+
+    .boxEdu .box .year .fa-calendar::before {
         display: none;
     }
-    .boxExp .box .year .fa-calendar::before{
+
+    .boxExp .box .year .fa-calendar::before {
         display: none;
     }
 }
-
-
