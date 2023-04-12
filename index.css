@@ -37,7 +37,7 @@ section {
     width: 100%;
 }
 
-.bgcolor.scrolled {
+.bgcolor.scrolled  {
     /* background-color: rgb(34, 34, 116); */
     font-family: Helvetica, san-serif;
     background: -webkit-linear-gradient(90deg, #25415b 10%, #0c2434 90%);
@@ -50,6 +50,7 @@ section {
     /* Opera 11.10+ */
     background: linear-gradient(90deg, #25415b 10%, #0c2434 90%);
 }
+
 
 .navbar-nav li a {
     color: white;
@@ -84,6 +85,18 @@ section {
     font-size: 1.5vw;
     line-height: 4.5vh;
     font-family: Monospace;
+}
+.myResumeButton{
+    background: none;
+    /* margin-top: 15vw;     */
+    border: 2px solid white;
+    width: 20vw;
+    margin-left: 10vw;
+    border-radius: 10px 0 10px 0;
+}
+.myResumeButton a{
+    text-decoration: none;
+    color: white;
 }
 
 /* .home{
@@ -262,6 +275,14 @@ section {
     color: white;
   }
   
+.flip-card-front img{
+    height: 9vw;
+}
+.WorkHeading{
+    margin-top: 1vw;
+    font-weight: bold;
+}
+
   /* Style the back side */
   .flip-card-back {
     transform: rotateY(180deg);
@@ -278,7 +299,12 @@ section {
     width: 90%;
     border-radius: 10px;
   }
-  .flip-card-back button:hover, .certificate-button:hover{
+  .flip-card-back button a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .flip-card-back button:hover{
     color: white;
     background: linear-gradient(90deg, #0c2434 10%, #25415b 90%);
   }
@@ -337,13 +363,20 @@ section {
 .box button{
     margin-bottom: 1vw;
 }
+
 .box button a{
     color: white;
     text-decoration: none;
 }
 .box button a:hover{
-    color: black;
+    color: white;
     text-decoration: none;
+    /* color: rgb(200, 0, 255); */
+    
+}
+.box button:hover{
+    /* border: 1px solid blue; */
+    background-color: rgb(71, 166, 255);
 }
 .year {
     position: relative;
@@ -411,8 +444,10 @@ section {
     text-align: center;
     margin: 5vw 0vw 3vw 0;
 }
-
-
+.footer{
+    font-size: 1.6vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 @media only screen and (max-width:1000px) {}
